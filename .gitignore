@@ -67,3 +67,7 @@ Thumbs.db
 
 # Golang
 vendor
+
+# misc
+terraform-provider-ubyon
+eg/
