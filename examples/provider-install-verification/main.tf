@@ -1,7 +1,8 @@
 terraform {
   required_providers {
     ubyon = {
-      source = "registry.terraform.io/hashicorp/ubyon"
+      source = "Ubyon/ubyon"
+      version = "0.1.2"
     }
   }
 }

@@ -1435,6 +1435,8 @@ func appCreateHelper(ctx context.Context, req resource.CreateRequest,
 				ep.Endpoint.AppEndpointId = types.StringValue(ae.Id)
 				if ep.BaSettings != nil && ae.BrowserAccessSettings != nil {
 					ep.BaSettings.AppEndpointId = types.StringValue(ae.Id)
+					ep.BaSettings.UrlAlias = types.BoolValue(ae.BrowserAccessSettings.UrlAlias)
+					ep.BaSettings.ResourceType = types.StringValue(ae.BrowserAccessSettings.ResourceType)
 				}
 			}
 		}
