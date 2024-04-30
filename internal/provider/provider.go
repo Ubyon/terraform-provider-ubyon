@@ -1,7 +1,6 @@
 /*
  *  Copyright © 2021-2024 All rights reserved
  *  Maintainer: Ubyon
- *  Contributors: Laxminarayana Tumuluru
  */
 
 package provider
