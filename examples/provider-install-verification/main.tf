@@ -1,8 +1,8 @@
 terraform {
   required_providers {
     ubyon = {
-      source = "Ubyon/ubyon"
-      version = "0.1.2"
+      source  = "Ubyon/ubyon"
+      version = "0.1.5"
     }
   }
 }

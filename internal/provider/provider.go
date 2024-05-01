@@ -44,9 +44,10 @@ func (p *UbyonProvider) Metadata(ctx context.Context, req provider.MetadataReque
 
 func (p *UbyonProvider) Schema(ctx context.Context, req provider.SchemaRequest, resp *provider.SchemaResponse) {
 	resp.Schema = schema.Schema{
+		MarkdownDescription: "Ubyon provider for Terraform.",
 		Attributes: map[string]schema.Attribute{
 			"endpoint": schema.StringAttribute{
-				MarkdownDescription: "The Ubyon API endpoint.",
+				MarkdownDescription: "The Ubyon API endpoint. Default https://manage.ubyon.com/api/v1",
 				Optional:            true,
 			},
 			"api_key": schema.StringAttribute{

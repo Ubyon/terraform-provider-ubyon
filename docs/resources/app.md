@@ -141,7 +141,7 @@ Optional:
 - `vnc_attributes` (Attributes) The request format of vnc Attributes of an AppEndpoint (see [below for nested schema](#nestedatt--endpoints--endpoint--attributes--vnc_attributes))
 
 <a id="nestedatt--endpoints--endpoint--attributes--db_attributes"></a>
-### Nested Schema for `endpoints.endpoint.attributes.vnc_attributes`
+### Nested Schema for `endpoints.endpoint.attributes.db_attributes`
 
 Optional:
 
@@ -158,7 +158,7 @@ Optional:
 - `tls_config` (Attributes) The tls configuration of an endpoint (see [below for nested schema](#nestedatt--endpoints--endpoint--attributes--vnc_attributes--db_config--tls_config))
 
 <a id="nestedatt--endpoints--endpoint--attributes--vnc_attributes--db_config--tls_cfg_options"></a>
-### Nested Schema for `endpoints.endpoint.attributes.vnc_attributes.db_config.tls_config`
+### Nested Schema for `endpoints.endpoint.attributes.vnc_attributes.db_config.tls_cfg_options`
 
 Optional:
 
@@ -174,7 +174,7 @@ Optional:
 - `proxy_server_cert_path` (Attributes) The proxy server cert path (see [below for nested schema](#nestedatt--endpoints--endpoint--attributes--vnc_attributes--db_config--tls_config--secrets_store--proxy_server_cert_path))
 
 <a id="nestedatt--endpoints--endpoint--attributes--vnc_attributes--db_config--tls_config--secrets_store--db_server_ca_path"></a>
-### Nested Schema for `endpoints.endpoint.attributes.vnc_attributes.db_config.tls_config.secrets_store.proxy_server_cert_path`
+### Nested Schema for `endpoints.endpoint.attributes.vnc_attributes.db_config.tls_config.secrets_store.db_server_ca_path`
 
 Optional:
 
@@ -205,7 +205,7 @@ Optional:
 
 
 <a id="nestedatt--endpoints--endpoint--attributes--default_attributes"></a>
-### Nested Schema for `endpoints.endpoint.attributes.vnc_attributes`
+### Nested Schema for `endpoints.endpoint.attributes.default_attributes`
 
 Optional:
 
@@ -213,7 +213,7 @@ Optional:
 
 
 <a id="nestedatt--endpoints--endpoint--attributes--idp_group_attributes"></a>
-### Nested Schema for `endpoints.endpoint.attributes.vnc_attributes`
+### Nested Schema for `endpoints.endpoint.attributes.idp_group_attributes`
 
 Optional:
 
@@ -222,7 +222,7 @@ Optional:
 
 
 <a id="nestedatt--endpoints--endpoint--attributes--k8s_attributes"></a>
-### Nested Schema for `endpoints.endpoint.attributes.vnc_attributes`
+### Nested Schema for `endpoints.endpoint.attributes.k8s_attributes`
 
 Optional:
 
@@ -233,7 +233,7 @@ Optional:
 
 
 <a id="nestedatt--endpoints--endpoint--attributes--rdp_attributes"></a>
-### Nested Schema for `endpoints.endpoint.attributes.vnc_attributes`
+### Nested Schema for `endpoints.endpoint.attributes.rdp_attributes`
 
 Optional:
 
@@ -241,7 +241,7 @@ Optional:
 
 
 <a id="nestedatt--endpoints--endpoint--attributes--ssh_attributes"></a>
-### Nested Schema for `endpoints.endpoint.attributes.vnc_attributes`
+### Nested Schema for `endpoints.endpoint.attributes.ssh_attributes`
 
 Optional:
 
