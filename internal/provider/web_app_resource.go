@@ -544,7 +544,7 @@ func (ar *WebAppResource) Read(ctx context.Context, req resource.ReadRequest, re
 		return
 	}
 
-	resp.Diagnostics.AddWarning("curr web data", spewCfg.Sdump(curr))
+	//resp.Diagnostics.AddWarning("curr web data", spewCfg.Sdump(curr))
 
 	appId := ConvTypesString(curr.Id)
 	if len(appId) <= 0 {

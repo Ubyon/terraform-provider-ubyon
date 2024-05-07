@@ -384,7 +384,7 @@ func (ar *SshAppResource) Read(ctx context.Context, req resource.ReadRequest, re
 		return
 	}
 
-	resp.Diagnostics.AddWarning("curr ssh data", spewCfg.Sdump(curr))
+	//resp.Diagnostics.AddWarning("curr ssh data", spewCfg.Sdump(curr))
 
 	appId := ConvTypesString(curr.Id)
 	if len(appId) <= 0 {

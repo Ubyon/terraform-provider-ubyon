@@ -1412,7 +1412,7 @@ func appCreateHelper(ctx context.Context, req resource.CreateRequest,
 		return false
 	}
 
-	resp.Diagnostics.AddWarning("Create resp", spewCfg.Sdump(apiResp))
+	//resp.Diagnostics.AddWarning("Create resp", spewCfg.Sdump(apiResp))
 
 	if apiResp.Data == nil || apiResp.Data.App == nil {
 		resp.Diagnostics.AddError("unexpected response from API. No response body", fmt.Sprintf("%v", apiResp))
@@ -1485,7 +1485,7 @@ func appReadHelper(ctx context.Context, req resource.ReadRequest,
 		return
 	}
 
-	resp.Diagnostics.AddWarning("Get resp", spewCfg.Sdump(apiResp.Data))
+	//resp.Diagnostics.AddWarning("Get resp", spewCfg.Sdump(apiResp.Data))
 
 	if apiResp.Data == nil || apiResp.Data.App == nil {
 		resp.Diagnostics.AddError("unexpected response from API. No response body", fmt.Sprintf("%v", apiResp))
@@ -1939,7 +1939,7 @@ func (ar *AppResource) Read(ctx context.Context, req resource.ReadRequest, resp 
 		return
 	}
 
-	resp.Diagnostics.AddWarning("curr data", spewCfg.Sdump(curr))
+	//resp.Diagnostics.AddWarning("curr data", spewCfg.Sdump(curr))
 
 	appId := ConvTypesString(curr.Id)
 	if len(appId) <= 0 {
@@ -2646,7 +2646,7 @@ func appUpdateHelper(ctx context.Context, req resource.UpdateRequest,
 		return
 	}
 
-	resp.Diagnostics.AddWarning("Update resp", spewCfg.Sdump(apiResp))
+	//resp.Diagnostics.AddWarning("Update resp", spewCfg.Sdump(apiResp))
 
 	if apiResp.Data == nil || apiResp.Data.App == nil {
 		resp.Diagnostics.AddError("unexpected response from API. No response body", fmt.Sprintf("%v", apiResp))

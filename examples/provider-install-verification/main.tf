@@ -77,10 +77,11 @@ resource "ubyon_ssh_app" "sshservereg55" {
   port = 22
   attributes = {
     ssh_proxy = "ENABLED"
-    ub_client = "DISABLED"
+    ub_client = "ENABLED"
   }
   auth_provider_ids = ["376d49e7850311eeb6b73e43327e90ca"]
   network_id        = "376cae20850311eeb6b73e43327e90ca"
+  app_tag_ids       = ["393c1670b50911eeb6b73e43327e90ca"]
 }
 
 resource "ubyon_ssh_app" "sshservereg57" {
@@ -89,7 +90,7 @@ resource "ubyon_ssh_app" "sshservereg57" {
   port = 22
   attributes = {
     ssh_proxy = "ENABLED"
-    ub_client = "DISABLED"
+    ub_client = "ENABLED"
   }
   auth_provider_ids = ["376d49e7850311eeb6b73e43327e90ca"]
   connector_ids     = ["7bba1178e73711ee91053e43327e90ca"]
